@@ -18,8 +18,15 @@ Edit two constants near the top of the `<script>` to point the footer at your re
 - Grid / Stack views with adjustable column count.
 - Info panel: name, source, dates, decoded Procreate parameters, plus Preview / Shape / Grain
   (and Secondary shape/grain for dual brushes), each with its own Save link.
-- Export previews — Separate (zip) / Stacked / Strip / Grid, as PNG / JPEG / WEBP / TIFF / PDF,
-  with an optional name caption.
+- Export previews with a live preview window:
+  - Layouts: Separate, Grid (set columns and rows), Stacked (set columns; one image or one per
+    column) and Strip (set rows; one image or one per row).
+  - Formats: PNG, JPEG, WEBP, TIFF (with transparency) and PDF.
+  - Background: none, white, black or any custom colour. The colour picker includes the
+    Spectator palette plus searchable Pantone TCX and Resene libraries (see `CREDITS.md`).
+  - Brush colour: auto-contrast, original or custom, so white strokes never vanish.
+  - Tiles are trimmed to the stroke at a consistent scale. Optional name captions; adjustable
+    tile width and spacing.
 - Export shape + grain PNGs; split a `.brushset` into individual `.brush` files; package selected
   Procreate brushes into a new `.brushset`.
 - `.abr` tips → PNG (reliable Photoshop route) and an experimental `.abr` → `.brush` converter.
@@ -29,7 +36,7 @@ Edit two constants near the top of the `<script>` to point the footer at your re
   documented); use the PNG-tip route for Photoshop. See `CREDITS.md`.
 - License: MIT (see `LICENSE`). 
 
-See `CHANGELOG.md` for release history.
+See `CHANGELOG.md` for release history and `INSTRUCTIONS.md` for a step-by-step guide.
 
 # Credits & third-party notices — Spectator
 
