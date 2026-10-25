@@ -22,6 +22,8 @@ Format based on [Keep a Changelog](https://keepachangelog.com/); versioning foll
 - **Trim empty space** (on by default): every tile is cropped to its stroke, and the final
   image is sized to the cells actually used. No more blank rows or wide empty margins.
 - Export settings and recent colours are remembered between visits (stored only in this browser).
+- Copyright notice: a `NOTICE.md` file, a copyright comment and author metadata at the top of
+  `index.html`, and a copyright and license line in the page footer.
 - TIFF exports keep transparency (RGBA with an unassociated alpha channel) when Background is None.
 
 ### Fixed

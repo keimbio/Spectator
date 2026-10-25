@@ -31,10 +31,16 @@ Edit two constants near the top of the `<script>` to point the footer at your re
   Procreate brushes into a new `.brushset`.
 - `.abr` tips → PNG (reliable Photoshop route) and an experimental `.abr` → `.brush` converter.
 
+## Copyright & reuse
+© 2026 Klara Keim ([@keimbio](https://github.com/keimbio)). Released under the MIT License.
+Every copy must keep the copyright notice and license text. To build on Spectator, please
+**fork this repository rather than re-uploading it**, and credit the author visibly. See
+[`NOTICE.md`](NOTICE.md).
+
 ## Notes
 - Writing real `.abr` files isn't reliably possible in-browser (the newer format isn't fully
   documented); use the PNG-tip route for Photoshop. See `CREDITS.md`.
-- License: MIT (see `LICENSE`). 
+- License: MIT (see `LICENSE`).
 
 See `CHANGELOG.md` for release history and `INSTRUCTIONS.md` for a step-by-step guide.
 
