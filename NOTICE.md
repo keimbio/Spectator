@@ -1,30 +1,25 @@
 # Copyright notice
 
-**Spectator** © 2026 Klara Keim, PhD ([@keimbio](https://github.com/keimbio)).
+**Spectator** © 2026 Klara Keim, PhD ([@keimbio](https://github.com/keimbio)). All rights reserved.
 
 - Original repository: https://github.com/keimbio/Spectator
-- Live app: https://keimbio.github.io/Spectator/
+- Official app: https://keimbio.github.io/Spectator/
 
-Spectator is open source under the [MIT License](LICENSE). You can use, study, modify and share it, but only under the terms of that license.
+From version 3.3.0 onward, Spectator is **source-available, not open source**. The full terms are in [`LICENSE`](LICENSE). Versions 3.2.1 and earlier were released under the MIT License, and copies of those versions stay under MIT.
 
-## What the license requires
+## You're welcome to
 
-Every copy or substantial portion of Spectator, modified or not, **must include the original copyright notice and the full MIT License text**.
+- use the app for personal or commercial work. Everything you export is yours.
+- read and learn from the code.
+- **fork this repository on GitHub** to experiment or to propose improvements through pull requests.
 
-The following violate the license and infringe the author's copyright:
+## Not allowed without written permission
 
-- removing or replacing the copyright notice
-- republishing Spectator under someone else's name
-- republishing it under a different license or claiming ownership of it
+- downloading Spectator and re-uploading it anywhere, including to another repository
+- hosting a copy or modified version as a public site, including GitHub Pages on a fork
+- selling Spectator or bundling it into another product
+- removing the copyright and credit notices, or presenting Spectator as your own work
 
-## How to reuse Spectator respectfully
+To ask for permission, or to report a copy that breaks these terms, open an issue at https://github.com/keimbio/Spectator/issues.
 
-1. **Fork the repository on GitHub. Don't download and re-upload it.** A fork keeps the history and the link back to the original. Use the **Fork** button at the top of the repository page.
-2. **Credit the author visibly** in your README and in the app itself, for example: *"Based on [Spectator](https://github.com/keimbio/Spectator) by Klara Keim."*
-3. **Keep `LICENSE`, `NOTICE.md` and `CREDITS.md`**, and keep the copyright comment at the top of `index.html`.
-
-## Reporting misuse
-
-If you find a copy of Spectator that removes the author's credit, please open an issue at https://github.com/keimbio/Spectator/issues.
-
-*Third-party material bundled in Spectator keeps its own licences. See `CREDITS.md`.*
+*Third-party material in Spectator keeps its own licenses. See [`CREDITS.md`](CREDITS.md).*

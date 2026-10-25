@@ -1,21 +1,86 @@
-MIT License
+Spectator Source-Available License
+Copyright (c) 2026 Klara Keim (GitHub: keimbio). All rights reserved.
 
-Copyright (c) 2026 Klara Keim
+Original source: https://github.com/keimbio/Spectator
+Official app:    https://keimbio.github.io/Spectator/
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This license applies to Spectator version 3.3.0 and every later version
+(the "Software"). Versions 3.2.1 and earlier were released under the MIT
+License, and copies of those earlier versions remain under the MIT License.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The Software is publicly viewable, but it is not open-source software. Except
+for the permissions listed below, no rights are granted.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+
+1. WHAT YOU MAY DO
+
+   a. Use the app. You may use the official app, or an unmodified copy run on
+      your own device, for personal or commercial work.
+
+   b. Own your files. Images, brush files and other files you create or
+      export with the Software belong to you. This license makes no claim on
+      them.
+
+   c. Read and learn. You may view and study the source code.
+
+   d. Fork on GitHub. You may fork the original repository using GitHub's
+      built-in "Fork" feature. You may change your fork to experiment, for
+      personal use, or to propose changes back through pull requests. Your
+      fork must keep this LICENSE file, NOTICE.md, CREDITS.md and every
+      copyright notice in the code, unchanged.
+
+
+2. WHAT YOU MAY NOT DO WITHOUT WRITTEN PERMISSION FROM THE AUTHOR
+
+   a. Re-upload or redistribute the Software or any substantial part of it,
+      modified or not, by any means other than GitHub's Fork feature. This
+      includes downloading it and uploading it to another repository,
+      website, file-sharing service or app store.
+
+   b. Host or publish the Software, or a modified version of it, as a public
+      website or service. This includes publishing a fork through GitHub
+      Pages.
+
+   c. Sell, rent, sublicense or bundle the Software, or any substantial part
+      of it, into another product.
+
+   d. Remove or alter any copyright, license or attribution notice.
+
+   e. Present the Software as your own work, or release it under a different
+      license.
+
+   To ask for permission, open an issue at
+   https://github.com/keimbio/Spectator/issues
+
+
+3. CONTRIBUTIONS
+
+   If you submit a pull request or other contribution, you agree that the
+   author may use, modify and distribute it as part of the Software under
+   this license or any future license the author chooses.
+
+
+4. THIRD-PARTY MATERIAL
+
+   Some components are owned by others and keep their own licenses. They are
+   listed in CREDITS.md. Nothing in this license limits your rights under
+   those licenses for those components.
+
+
+5. TERMINATION
+
+   If you break any term of this license, every permission it gives you ends
+   automatically. You must then stop using any modified copy and delete any
+   copies you distributed. The author may restore your permissions in
+   writing.
+
+
+6. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHOR OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.

@@ -3,12 +3,9 @@
 A single-file, client-side previewer & packager for Procreate (`.brush`, `.brushset`) and
 Photoshop (`.abr`) brushes. Everything runs in your browser — files are never uploaded.
 
-## Deploy
-Drop `index.html` in a repo and enable GitHub Pages, or just open it locally. Identical
-capability either way (pure client-side). No build step.
-
-Edit two constants near the top of the `<script>` to point the footer at your repo:
-`REPO_URL` and `APP_VERSION`.
+## Use it
+Open the official app at https://keimbio.github.io/Spectator/. It runs entirely client-side,
+with no build step. `INSTRUCTIONS.md` has a step-by-step guide.
 
 ## Features
 - Batch-load `.brush`, `.brushset`, `.abr` — click the Brushes box or drag & drop onto it.
@@ -32,21 +29,22 @@ Edit two constants near the top of the `<script>` to point the footer at your re
 - `.abr` tips → PNG (reliable Photoshop route) and an experimental `.abr` → `.brush` converter.
 
 ## Copyright & reuse
-© 2026 Klara Keim ([@keimbio](https://github.com/keimbio)). Released under the MIT License.
-Every copy must keep the copyright notice and license text. To build on Spectator, please
-**fork this repository rather than re-uploading it**, and credit the author visibly. See
-[`NOTICE.md`](NOTICE.md).
+© 2026 Klara Keim ([@keimbio](https://github.com/keimbio)). All rights reserved.
+From v3.3.0 onward, Spectator is **source-available**, not open source. You may use the app,
+read the code, and **fork this repository on GitHub**. Re-uploading, re-hosting or
+redistributing it needs written permission. See [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.md).
+Versions up to 3.2.1 were released under MIT.
 
 ## Notes
 - Writing real `.abr` files isn't reliably possible in-browser (the newer format isn't fully
   documented); use the PNG-tip route for Photoshop. See `CREDITS.md`.
-- License: MIT (see `LICENSE`).
+- License: Spectator Source-Available License (see `LICENSE`).
 
 See `CHANGELOG.md` for release history and `INSTRUCTIONS.md` for a step-by-step guide.
 
 # Credits & third-party notices — Spectator
 
-Spectator is released under the MIT License (see `LICENSE`). It is an original implementation,
+Spectator is source-available under the Spectator License (see `LICENSE`). It is an original implementation,
 but it stands on knowledge and one piece of data from the open-source community.
 
 ## Embedded material (attribution required)

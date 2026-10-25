@@ -43,6 +43,9 @@ Format based on [Keep a Changelog](https://keepachangelog.com/); versioning foll
   Previously one value was written for three channels.
 
 ### Changed
+- **License changed from MIT to the Spectator Source-Available License.** Spectator is still
+  free to use and fork on GitHub. Re-uploading, re-hosting and redistribution now need the
+  author's written permission. Versions up to 3.2.1 remain under MIT.
 - Source-file tools (shape + grain, split, `.abr`, package `.brushset`) moved to their own
   "Source files" tab in the export window.
 - Version bumped to 3.3.0.

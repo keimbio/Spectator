@@ -1,6 +1,6 @@
 # Credits & third-party notices — Spectator
 
-Spectator is released under the MIT License (see `LICENSE`). It is an original implementation,
+Spectator is source-available under the Spectator License (see `LICENSE`). It is an original implementation,
 but it stands on knowledge and one piece of data from the open-source community.
 
 ## Embedded material (attribution required)

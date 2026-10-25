@@ -5,7 +5,7 @@ No coding experience needed. Everything runs in your web browser. Your brush fil
 ## 1. Open Spectator
 
 - **Online:** go to https://keimbio.github.io/Spectator/
-- **Offline:** double-click `index.html`. It opens in your default browser. The first visit needs internet to load two helper libraries and the font.
+- **Offline:** if you've downloaded `index.html` for your own use, double-click it to open it in your browser. The first visit needs internet to load two helper libraries and the font.
 
 ## 2. Load brushes
 
@@ -41,12 +41,12 @@ Open the **Source files** tab in the export window to:
 - turn `.abr` tips into PNGs
 - bundle the selected brushes into a new `.brushset`
 
-## 5. Publish your own copy on GitHub Pages
+## 5. Publish an update (maintainer only)
 
 1. On GitHub, open your **Spectator** repository and click **Add file → Upload files**.
-2. Drag in `index.html`, `README.md`, `INSTRUCTIONS.md`, `CHANGELOG.md`, `CREDITS.md` and `LICENSE`. Then click **Commit changes**.
+2. Drag in `index.html`, `README.md`, `INSTRUCTIONS.md`, `CHANGELOG.md`, `CREDITS.md`, `NOTICE.md` and `LICENSE`. Then click **Commit changes**.
 3. Go to **Settings → Pages**. Under **Branch**, choose `main` and `/ (root)`, then click **Save**.
-4. Wait about a minute, then reload `https://<your-username>.github.io/Spectator/`.
+4. Wait about a minute, then reload https://keimbio.github.io/Spectator/.
 
 ## Troubleshooting
 
