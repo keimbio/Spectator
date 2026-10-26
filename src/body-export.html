@@ -1,0 +1,137 @@
+<!-- Export modal (v3.3) -->
+<div class="modal" id="export-modal">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card xmodal" role="dialog" aria-modal="true" aria-labelledby="xTitle">
+    <div class="xhead">
+      <div class="xhead-t"><h3 id="xTitle">Export</h3><p class="hint" id="export-sub">0 selected</p></div>
+      <div class="xtabs" role="tablist" aria-label="Export type">
+        <button class="xtab on" role="tab" aria-selected="true" data-tab="img">Previews</button>
+        <button class="xtab" role="tab" aria-selected="false" data-tab="src">Brush files</button>
+      </div>
+      <button class="btn ghost sm" data-close>Close</button>
+    </div>
+
+    <div class="xpane" id="xpane-img">
+      <div class="xctl">
+        <section class="xgrp">
+          <h4 id="hFmt">Format</h4>
+          <div class="fmtrow" role="radiogroup" aria-labelledby="hFmt">
+            <button class="fchip" role="radio" data-x="fmt" data-v="png"><b>PNG</b><span>Transparent</span></button>
+            <button class="fchip" role="radio" data-x="fmt" data-v="jpeg"><b>JPEG</b><span>Smallest</span></button>
+            <button class="fchip" role="radio" data-x="fmt" data-v="webp"><b>WEBP</b><span>Transparent</span></button>
+            <button class="fchip" role="radio" data-x="fmt" data-v="tiff"><b>TIFF</b><span>Print</span></button>
+            <button class="fchip" role="radio" data-x="fmt" data-v="pdf"><b>PDF</b><span>Pages</span></button>
+          </div>
+        </section>
+
+        <section class="xgrp">
+          <h4 id="hLay">Layout</h4>
+          <div class="laygrid" role="radiogroup" aria-labelledby="hLay">
+            <button class="lay" role="radio" data-x="layout" data-v="separate"><svg viewBox="0 0 44 30" aria-hidden="true"><rect x="16" y="2" width="24" height="16" rx="2"/><rect x="10" y="7" width="24" height="16" rx="2"/><rect x="4" y="12" width="24" height="16" rx="2"/></svg><span>Separate</span></button>
+            <button class="lay" role="radio" data-x="layout" data-v="grid"><svg viewBox="0 0 44 30" aria-hidden="true"><rect x="3" y="3" width="11" height="11" rx="2"/><rect x="16.5" y="3" width="11" height="11" rx="2"/><rect x="30" y="3" width="11" height="11" rx="2"/><rect x="3" y="16" width="11" height="11" rx="2"/><rect x="16.5" y="16" width="11" height="11" rx="2"/><rect x="30" y="16" width="11" height="11" rx="2"/></svg><span>Grid</span></button>
+            <button class="lay" role="radio" data-x="layout" data-v="stack"><svg viewBox="0 0 44 30" aria-hidden="true"><rect x="4" y="3" width="16" height="6" rx="2"/><rect x="4" y="12" width="16" height="6" rx="2"/><rect x="4" y="21" width="16" height="6" rx="2"/><rect x="24" y="3" width="16" height="6" rx="2"/><rect x="24" y="12" width="16" height="6" rx="2"/><rect x="24" y="21" width="16" height="6" rx="2"/></svg><span>Stacked</span></button>
+            <button class="lay" role="radio" data-x="layout" data-v="strip"><svg viewBox="0 0 44 30" aria-hidden="true"><rect x="2" y="5" width="12" height="7" rx="2"/><rect x="16" y="5" width="12" height="7" rx="2"/><rect x="30" y="5" width="12" height="7" rx="2"/><rect x="2" y="18" width="12" height="7" rx="2"/><rect x="16" y="18" width="12" height="7" rx="2"/><rect x="30" y="18" width="12" height="7" rx="2"/></svg><span>Strip</span></button>
+          </div>
+
+          <div class="arr" id="arr-separate"><p class="ahint">Each brush becomes its own image, cropped to its stroke. Several images download as a .zip.</p></div>
+          <div class="arr" id="arr-grid">
+            <div class="arow"><span id="lGc">Columns</span><div class="step" data-step="gridCols" data-auto="1" role="group" aria-labelledby="lGc"><button type="button" data-d="-1" aria-label="Fewer columns">−</button><input inputmode="numeric" aria-labelledby="lGc"><button type="button" data-d="1" aria-label="More columns">+</button></div></div>
+            <div class="arow"><span id="lGr">Rows</span><div class="step" data-step="gridRows" data-auto="1" role="group" aria-labelledby="lGr"><button type="button" data-d="-1" aria-label="Fewer rows">−</button><input inputmode="numeric" aria-labelledby="lGr"><button type="button" data-d="1" aria-label="More rows">+</button></div></div>
+            <p class="ahint" id="hint-grid"></p>
+          </div>
+          <div class="arr" id="arr-stack">
+            <div class="arow"><span id="lSc">Columns</span><div class="step" data-step="stackCols" role="group" aria-labelledby="lSc"><button type="button" data-d="-1" aria-label="Fewer columns">−</button><input inputmode="numeric" aria-labelledby="lSc"><button type="button" data-d="1" aria-label="More columns">+</button></div></div>
+            <div class="arow"><span id="lSo">Save as</span><div class="seg2" role="radiogroup" aria-labelledby="lSo"><button class="segb" role="radio" data-x="stackOut" data-v="one">One image</button><button class="segb" role="radio" data-x="stackOut" data-v="split">Image per column</button></div></div>
+            <p class="ahint" id="hint-stack"></p>
+          </div>
+          <div class="arr" id="arr-strip">
+            <div class="arow"><span id="lRr">Rows</span><div class="step" data-step="stripRows" role="group" aria-labelledby="lRr"><button type="button" data-d="-1" aria-label="Fewer rows">−</button><input inputmode="numeric" aria-labelledby="lRr"><button type="button" data-d="1" aria-label="More rows">+</button></div></div>
+            <div class="arow"><span id="lRo">Save as</span><div class="seg2" role="radiogroup" aria-labelledby="lRo"><button class="segb" role="radio" data-x="stripOut" data-v="one">One image</button><button class="segb" role="radio" data-x="stripOut" data-v="split">Image per row</button></div></div>
+            <p class="ahint" id="hint-strip"></p>
+          </div>
+        </section>
+
+        <section class="xgrp">
+          <h4 id="hBg">Background</h4>
+          <div class="swrow" role="radiogroup" aria-labelledby="hBg">
+            <button class="optsw" role="radio" data-x="bg" data-v="none"><i class="sw sw-none"></i>None</button>
+            <button class="optsw" role="radio" data-x="bg" data-v="white"><i class="sw sw-white"></i>White</button>
+            <button class="optsw" role="radio" data-x="bg" data-v="black"><i class="sw sw-black"></i>Black</button>
+            <button class="optsw" role="radio" data-x="bg" data-v="custom" data-pick="bgCustom" aria-haspopup="dialog"><i class="sw sw-custom" id="swBg"></i>Custom</button>
+          </div>
+          <p class="ahint" id="bgNote" hidden></p>
+        </section>
+
+        <section class="xgrp">
+          <h4 id="hInk">Brush color</h4>
+          <div class="swrow three" role="radiogroup" aria-labelledby="hInk">
+            <button class="optsw" role="radio" data-x="ink" data-v="auto"><i class="sw sw-auto"></i>Auto</button>
+            <button class="optsw" role="radio" data-x="ink" data-v="original"><i class="sw sw-orig"></i>Original</button>
+            <button class="optsw" role="radio" data-x="ink" data-v="custom" data-pick="inkCustom" aria-haspopup="dialog"><i class="sw sw-custom" id="swInk"></i>Custom</button>
+          </div>
+          <p class="ahint" id="inkNote"></p>
+        </section>
+
+        <section class="xgrp">
+          <h4>Size &amp; labels</h4>
+          <div class="rng"><label for="xTile">Tile width</label><input type="range" id="xTile" min="128" max="2048" step="32" data-xr="tile"><output for="xTile" id="oTile"></output></div>
+          <div class="rng"><label for="xGap">Spacing</label><input type="range" id="xGap" min="0" max="128" step="4" data-xr="gap"><output for="xGap" id="oGap"></output></div>
+          <label class="tgl"><input type="checkbox" data-xb="caption"><span class="trk"></span><span>Name captions</span></label>
+          <label class="tgl"><input type="checkbox" data-xb="trim"><span class="trk"></span><span>Trim empty space<small>Crops each tile to its stroke; scale stays the same for every brush.</small></span></label>
+        </section>
+      </div>
+
+      <div class="xprev">
+        <div class="xstage" id="xpStage" aria-label="Export preview"><canvas id="xpCanvas" width="1" height="1"></canvas><div class="xstage-msg" id="xpMsg"></div></div>
+        <div class="xpager" id="xpPager" hidden><button class="pg" id="xpPrev" aria-label="Previous image">‹</button><span id="xpPage" aria-live="polite"></span><button class="pg" id="xpNext" aria-label="Next image">›</button></div>
+      </div>
+    </div>
+
+    <div class="xpane src" id="xpane-src" hidden>
+      <div class="xsec">
+        <h4>Brush files</h4><p class="hint">Save the files inside the brushes: shapes, grains and tips.</p>
+        <div class="tilegrid a">
+          <button class="actiontile" id="doExportShapeGrain"><span class="ti">PNG</span><span class="tt">Shape + grain</span><span class="ts">export PNGs</span></button>
+          <button class="actiontile" id="doSplitBrush"><span class="ti">.br</span><span class="tt">Split → .brush</span><span class="ts">individual files</span></button>
+          <button class="actiontile" id="doAbrTip"><span class="ti">PS</span><span class="tt">.abr tips → PNG</span><span class="ts">Define Brush Preset</span></button>
+          <button class="actiontile" id="doAbrToBrush"><span class="ti">→br</span><span class="tt">.abr → .brush</span><span class="ts">experimental</span></button>
+        </div>
+      </div>
+      <div class="xsec" style="margin-bottom:0">
+        <h4>Package → .brushset</h4><p class="hint">Bundle selected Procreate brushes into one set.</p>
+        <div class="optrow">
+          <span class="ifield">name <input type="text" id="setName" value="My Brushes" style="width:210px"></span>
+          <button class="btn primary" id="doPackBrushset">Package .brushset</button>
+        </div>
+        <p class="note warn">Writing real <b>.abr</b> files isn't reliable in-browser — use ".abr tips → PNG" for Photoshop. Packaging/splitting apply to Procreate brushes.</p>
+      </div>
+    </div>
+
+    <div class="xfoot2" id="xfoot">
+      <p class="xsum" id="xpSum" aria-live="polite"></p>
+      <button class="btn primary" id="doExportImg">Export previews</button>
+    </div>
+  </div>
+</div>
+
+<!-- Color picker (shared by Background + Brush color) -->
+<div class="cpick" id="cpick" role="dialog" aria-label="Choose a color" hidden>
+  <div class="cp-sv" id="cpSV"><i class="cp-k" id="cpSVk"></i></div>
+  <div class="cp-hue" id="cpHue" role="slider" aria-label="Hue" tabindex="0" aria-valuemin="0" aria-valuemax="360"><i class="cp-k" id="cpHuek"></i></div>
+  <div class="cp-row">
+    <span class="cp-chip" id="cpChip"></span>
+    <input type="text" id="cpHex" maxlength="7" spellcheck="false" aria-label="Hex color">
+    <button class="cp-ico" id="cpDrop" title="Pick from screen" aria-label="Pick a color from the screen" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z"/></svg></button>
+  </div>
+  <div class="cp-recent" id="cpRecent" aria-label="Recent colors"></div>
+  <div class="cp-tabs" role="tablist" aria-label="Color library">
+    <button class="cp-tab on" role="tab" data-lib="spectator">Spectator</button>
+    <button class="cp-tab" role="tab" data-lib="pantone">Pantone</button>
+    <button class="cp-tab" role="tab" data-lib="resene">Resene</button>
+  </div>
+  <input type="search" class="cp-search" id="cpSearch" placeholder="Search name or hex" aria-label="Search colors">
+  <div class="cp-grid" id="cpGrid"></div>
+  <div class="cp-foot"><span id="cpName"></span><button class="btn primary sm" id="cpDone">Done</button></div>
+</div>
+
+

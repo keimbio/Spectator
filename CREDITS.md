@@ -7,16 +7,28 @@ but it stands on knowledge and one piece of data from the open-source community.
 
 - **Procreate brush-parameter schema** — adapted from
   [aumlette-lab/procreate-brush-decoder](https://github.com/aumlette-lab/procreate-brush-decoder)
-  (MIT License). A trimmed version of its parameter map (setting names, archive paths, and value
-  formulas) is embedded to label decoded brush parameters. Used under the MIT License.
+  (MIT License). Its v1.7 parameter map (setting names, archive paths, value formulas, multi-key
+  mappings and defaults) is embedded in `src/data/brush-schema.json` and drives the brush details
+  view. The decoding rules follow its `decodeEngine.ts`. Used under the MIT License.
 
-## Runtime libraries (loaded from CDN, not bundled)
+## Bundled libraries and fonts
 
-- **JSZip** — MIT License. https://stuk.github.io/jszip/
-- **jsPDF** — MIT License. https://github.com/parallax/jsPDF
+- **JSZip** 3.10.1 (`lib/jszip.min.js`). MIT License. https://stuk.github.io/jszip/
+- **jsPDF** 2.5.1 (`lib/jspdf.umd.min.js`). MIT License. https://github.com/parallax/jsPDF
+- **Hanken Grotesk** (`fonts/`). SIL Open Font License 1.1, full text in `fonts/OFL.txt`.
+  Copyright 2021 The Hanken Grotesk Project Authors. Files from Fontsource.
 
-If you self-host these instead of loading them from a CDN, include their MIT notices alongside
-the copies you distribute.
+## Background images
+
+Photographs from Unsplash, used under the Unsplash License: Susan Wilkinson (green marble, aqua
+marble), Paweł Czerwiński (blue marble) and Aljoscha Laschgari (grey marble). They're resized for
+the web.
+
+## Color themes
+
+The Aquamarine, Burnt peach, Sunlit clay and Twilight indigo themes use palettes from color cards
+by NYNÄ ([@nynatrema](https://www.instagram.com/nynatrema/)), supplied by Klara Keim. The Spectator
+theme is Klara Keim's own retro palette.
 
 ## Colour libraries (embedded in the export colour picker)
 

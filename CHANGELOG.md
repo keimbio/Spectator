@@ -3,6 +3,62 @@
 All notable changes to Spectator are documented here.
 Format based on [Keep a Changelog](https://keepachangelog.com/); versioning follows [SemVer](https://semver.org/).
 
+## [4.0.0] - 2026-10-26
+
+### Added
+- **New main window.** The header now has four actions: **Import**, **Export brushes**,
+  **Export previews** (each showing how many brushes are selected) and **Settings**. Selection
+  and layout controls sit in a toolbar inside the Brushes panel. The empty panel is now a large
+  drop zone.
+- **Settings window**, modeled on Claude Export Viewer:
+  - Dark, light or match-system appearance.
+  - Five color themes: Spectator, Aquamarine, Burnt peach, Sunlit clay and Twilight indigo.
+    Each theme is six colors in `src/js/themes.js`, and the surfaces, borders, text shades,
+    light-mode version and contrast checks are derived from them.
+  - Background: none, an "aura" in the theme's colors, four photo presets, or an uploaded image.
+    The uploaded image is stored in IndexedDB.
+  - Background dimming, text font (Hanken Grotesk, Helvetica Neue, Lucida Grande or system),
+    and text size. The size control moved here from the header.
+- **Redesigned brush details**, laid out like Procreate's Brush Studio:
+  - Section tabs follow Procreate's order, and settings are grouped under their Procreate
+    subheadings (for example Pressure taper and Stamp color jitter).
+  - Values show as meters, On/Off states, named modes or degrees.
+  - Only the settings a brush uses are listed. "Show unused settings" lists the rest.
+  - A side column shows the stroke preview, shape, grain, the secondary brush for dual brushes,
+    About this brush (author, creation date, set, file) and the author's signature.
+- List view now shows wide stroke previews with the name beside them. Grid view goes up to 6
+  columns, adapts to narrow windows, and remembers your layout.
+- Shift-click selects a range of brushes.
+
+### Fixed
+- **Brush settings were mis-decoded.** Spectator used a trimmed copy of the parameter schema that
+  kept only the first archive key of each setting and dropped the mapping tables.
+  - Settings stored across several keys lost their meaning. For example, "Input Style" printed
+    every possible value ("On Touch Only, Azimuth, Azimuth and Rolling") instead of the brush's
+    actual value.
+  - Text-only formulas such as "0 = Moving, 1 = Texturised" were never applied.
+  - Spectator now embeds the full v1.7 schema and decodes it the way the reference decoder does:
+    multi-key pattern matching, derived blend-mode pairs, defaults for missing keys, enumerations,
+    and JavaScript-style formulas such as Pressure roundness.
+- **"Shape Source: $null"**: `$null` is how Procreate marks a shape or grain imported into the
+  brush. It now reads "Imported image (stored as Shape.png)". A named source such as
+  `Brush-Preset-Hard.png` reads "Procreate library: Hard", with a note that the file isn't
+  inside the brush.
+- **Count showed 0** on some brushes. Procreate's minimum is 1, so the value is now clamped.
+- **Brush previews disappeared in light mode.** Procreate thumbnails are white strokes, so preview
+  areas stay dark in both modes.
+- **Card text was too small.** Brush names are larger, wrap to two lines, and show the brush set
+  underneath.
+
+### Changed
+- **Fonts and libraries are bundled.** Hanken Grotesk, JSZip and jsPDF ship in `fonts/` and
+  `lib/`, with nothing loaded from Google Fonts or a CDN. Spectator is now a small folder rather
+  than a single file. Deploy all of it: `index.html`, `lib/`, `fonts/` and `assets/`.
+- **Source is split into `src/`.** `build.py` assembles `index.html` from it and checks the
+  JavaScript before writing.
+- **US spelling throughout the interface** ("color").
+- Version bumped to 4.0.0.
+
 ## [3.3.0] - 2026-10-25
 
 ### Added
